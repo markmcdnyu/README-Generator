@@ -1,5 +1,5 @@
-const inquirer = require("inquirer");
-const fs = require('fs');
+// License function and  if/else section here 
+
 
 
 function valiateInput(value) {
@@ -10,8 +10,8 @@ function valiateInput(value) {
     }
 }
 
-inquirer.prompt([
-    // const questions = [
+
+const questions = [
     // Question for the Title
     {
         type: "input",
@@ -23,7 +23,7 @@ inquirer.prompt([
     {
         type: "input",
         name: "description",
-        message: "Please enter a description for your project.",
+        message: "Please enter a description of your project.",
         validate: valiateInput,
     },
 
@@ -43,14 +43,14 @@ inquirer.prompt([
     {
         type: "input",
         name: "usage",
-        message: "Please enter a description for your project.",
+        message: "Please describe how we can use this program/project.",
         validate: valiateInput,
     },
 
     // Question for License 
     {
         type: "list",
-        name: "description",
+        name: "license",
         message: "Please select a license for this project.",
         choices: [
             "GNU AGPLv3",
@@ -68,7 +68,7 @@ inquirer.prompt([
     {
         type: "input",
         name: "contributing",
-        message: "Please instruct how users can contribute to your project.",
+        message: "How can users contribute to your project.",
         validate: valiateInput,
     },
 
@@ -101,18 +101,15 @@ inquirer.prompt([
             }
         },
     },
-]).then(function (data) {
+];
 
-    var filename = data.name.toLowerCase().split(' ').join('') + ".json";
+// need the const fs variable here
+const fs = require('fs');
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
+// need inquirer variable here
+const inquirer = require("inquirer");
 
-        if (err) {
-            return console.log(err);
-        }
+// need a markdown js file here and make it a const variable
 
-        console.log("Success!");
 
-    });
-});
-//];
+// function to generate the ReadMe here
