@@ -125,7 +125,29 @@ const fs = require('fs');
 // need inquirer variable here
 const inquirer = require("inquirer");
 
-// need a markdown js file here and make it a const variable
+// need a markdown js file here
+const generateMarkdown = require("./utils/generateMarkdown");
 
 
 // function to generate the ReadMe here
+function writeToFile(fileName, data) {
+    let readMeString = generateMarkdown(data);
+    fs.writeFile(fileName, readMeString, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    });
+}
+
+
+// function to initalize the beginning of the questions 
+function init() {
+    inquirer.prompt(questions).then((data) => {
+        console.log(JOSN.stringify(data, null, " "));
+        data.getLicense = getLicense(data.license);
+        writeToFile("./example/readme.md", data);
+    });
+}
+
+// call the function to initalize the beginning of the questions 
+init();
