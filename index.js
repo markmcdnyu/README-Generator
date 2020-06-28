@@ -2,20 +2,29 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 
 
-const questions = [
+function valiateInput(value) {
+    if (value != "") {
+        return true;
+    } else {
+        return "Please answer the question with some kind on input.";
+    }
+}
+
+inquirer.prompt([
+    // const questions = [
     // Question for the Title
     {
         type: "input",
         name: "title",
         message: "What is the title of your project?",
-        //validate an input here
+        validate: valiateInput,
     },
     // Question for the project Description
     {
         type: "input",
         name: "description",
         message: "Please enter a description for your project.",
-        //validate an input here
+        validate: valiateInput,
     },
 
     // Table of Contents
@@ -27,7 +36,7 @@ const questions = [
         type: "input",
         name: "installation",
         message: "Please enter an explanation how to install the software, or commands for the program.",
-        //validate an input here
+        validate: valiateInput,
     },
 
     // Question for Usage
@@ -35,7 +44,7 @@ const questions = [
         type: "input",
         name: "usage",
         message: "Please enter a description for your project.",
-        //validate an input here
+        validate: valiateInput,
     },
 
     // Question for License 
@@ -44,14 +53,15 @@ const questions = [
         name: "description",
         message: "Please select a license for this project.",
         choices: [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "GNU AGPLv3",
+            "GNU GPLv3",
+            "GNU LGPLv3",
+            "Apache 2.0",
+            "Boost Software 1.0",
+            "MIT",
+            "Mozilla",
         ],
-        //validate an input here
+        validate: valiateInput,
     },
 
     // Question for Contributing 
@@ -59,7 +69,7 @@ const questions = [
         type: "input",
         name: "contributing",
         message: "Please instruct how users can contribute to your project.",
-        //validate an input here
+        validate: valiateInput,
     },
 
     // Question for Tests
@@ -67,7 +77,7 @@ const questions = [
         type: "input",
         name: "tests",
         message: "Please enter any testing instructions you would like to provide for this project.",
-        //validate an input here
+        validate: valiateInput,
     },
 
     // QUESTIONS section -- github 
@@ -75,7 +85,7 @@ const questions = [
         type: "input",
         name: "userName",
         message: "What is your GitHub username?",
-        //validate an input here
+        validate: valiateInput,
     },
 
     // QUESTIONS section -- email address
@@ -89,7 +99,20 @@ const questions = [
             } else {
                 return "Not a valid email address. Please enter a valid email address.";
             }
-        }
+        },
     },
+]).then(function (data) {
 
-];
+    var filename = data.name.toLowerCase().split(' ').join('') + ".json";
+
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
+
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log("Success!");
+
+    });
+});
+//];
