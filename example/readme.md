@@ -1,10 +1,10 @@
 
 # Project Title
-Test
+The Grand Project
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Description
-Testing
+Finding all the great coding snippets
 
 # Table of Contents 
 * [Installation](#-Installation)
@@ -15,19 +15,19 @@ Testing
 * [Questions](#-Contact-Information)
     
 # Installation
-Testing 
+USe NPM install
 
 # Usage
-Testing 
+Use this wiesely 
 
 # License 
 MIT
 * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
 
 # Contributing 
-Testing 
+Fork the repo, then code 
 # Tests
-Testing 
+Use Unit testing with Jest 
 # Contact Information 
 * GitHub Username: markmcdnyu
 * Contact Email: markwilliammcdonald@gmail.com

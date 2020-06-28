@@ -28,8 +28,10 @@ ${data.license}
 
 # Contributing 
 ${data.contributing}
+
 # Tests
 ${data.tests}
+
 # Contact Information 
 * GitHub Username: ${data.userName}
 * Contact Email: ${data.userEmail}
