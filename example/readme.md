@@ -1,38 +1,34 @@
 
-    # Project Title
-    Test
-    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# Project Title
+Test
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-    # Description
-    Test Testing 123
+# Description
+Testing
 
-    # Table of Contents 
-    * [Installation](#-Installation)
-    * [Usage](#-Usage)
-    * [License](#-Installation)
-    * [Contributing](#-Contributing)
-    * [Tests](#-Tests)
-    * [Questions](#-Contact-Information)
+# Table of Contents 
+* [Installation](#-Installation)
+* [Usage](#-Usage)
+* [License](#-Installation)
+* [Contributing](#-Contributing)
+* [Tests](#-Tests)
+* [Questions](#-Contact-Information)
     
-    # Installation
-    Please use wisely 
+# Installation
+Testing 
 
-    # Usage
-    Use for your own person use 
+# Usage
+Testing 
 
-    # License 
-    Apache 2.0
+# License 
+MIT
+* As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
 
-    * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
-    
-    # Contributing 
-    Any one can fork and use it 
+# Contributing 
+Testing 
+# Tests
+Testing 
+# Contact Information 
+* GitHub Username: markmcdnyu
+* Contact Email: markwilliammcdonald@gmail.com
 
-    # Tests
-    Jest
-
-    # Contact Information 
-    * GitHub Username: markmcdnyu
-    * Contact Email: markwilliammcdonald@gmail.com
-    
-    

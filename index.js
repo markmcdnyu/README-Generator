@@ -1,3 +1,13 @@
+// need the const fs variable here
+const fs = require("fs");
+
+// need inquirer variable here
+const inquirer = require("inquirer");
+
+// need a markdown js file here
+const generateMarkdown = require("./utils/generateMarkdown");
+
+
 // License function and  if/else section here 
 function getLicense(value) {
     if (value === "GNU AGPLv3") {
@@ -117,19 +127,9 @@ const questions = [
     },
 ];
 
-// need the const fs variable here
-const fs = require("fs");
-
-// need inquirer variable here
-const inquirer = require("inquirer");
-
-// need a markdown js file here
-const generateMarkdown = require("./utils/generateMarkdown");
-
 
 // function to generate the ReadMe here
 function writeToFile(fileName, data) {
-    // let readMeString = generateMarkdown(data);
     fs.writeFile(fileName, generateMarkdown(data), function (err) {
         if (err) {
             return console.log(err);
