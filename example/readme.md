@@ -1,10 +1,10 @@
 
     # Project Title
     Test
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
     # Description
-    Testing Testing 123
+    Test Testing 123
 
     # Table of Contents 
     * [Installation](#-Installation)
@@ -15,21 +15,21 @@
     * [Questions](#-Contact-Information)
     
     # Installation
-    NPM
+    Please use wisely 
 
     # Usage
-    USe if however you would like 
+    Use for your own person use 
 
     # License 
-    MIT
+    Apache 2.0
 
     * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
     
     # Contributing 
-    Fork and go code
+    Any one can fork and use it 
 
     # Tests
-    Use Jest for Unit testing 
+    Jest
 
     # Contact Information 
     * GitHub Username: markmcdnyu

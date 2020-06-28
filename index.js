@@ -129,8 +129,8 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // function to generate the ReadMe here
 function writeToFile(fileName, data) {
-    let readMeString = generateMarkdown(data);
-    fs.writeFile(fileName, readMeString, function (err) {
+    // let readMeString = generateMarkdown(data);
+    fs.writeFile(fileName, generateMarkdown(data), function (err) {
         if (err) {
             return console.log(err);
         }
