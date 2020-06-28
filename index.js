@@ -118,7 +118,7 @@ const questions = [
 ];
 
 // need the const fs variable here
-const fs = require('fs');
+const fs = require("fs");
 
 // need inquirer variable here
 const inquirer = require("inquirer");
@@ -143,7 +143,7 @@ function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(JSON.stringify(data, null, " "));
         data.getLicense = getLicense(data.license);
-        writeToFile("./example/readme.md", data);
+        writeToFile("./example/README.md", data);
     });
 }
 

@@ -1,9 +1,10 @@
 
     # Project Title
-    The Grand Project 
+    Test
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
     # Description
-    Gather all the best code snippets
+    Testing Testing 123
 
     # Table of Contents 
     * [Installation](#-Installation)
@@ -14,21 +15,21 @@
     * [Questions](#-Contact-Information)
     
     # Installation
-    If using NPM and node, please install NPM
+    NPM
 
     # Usage
-    Usage should be to crowd source all the best from the best 
+    USe if however you would like 
 
     # License 
-    Boost Software 1.0
+    MIT
 
     * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
     
     # Contributing 
-    Contribute to this project by forking and then code all your best code
+    Fork and go code
 
     # Tests
-    If you Unit test, try using Jest 
+    Use Jest for Unit testing 
 
     # Contact Information 
     * GitHub Username: markmcdnyu
