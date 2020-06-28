@@ -43,9 +43,7 @@ const questions = [
         validate: valiateInput,
     },
 
-    // Table of Contents
-    // not 100% sure how I will do this
-
+    // Table of Contents, andling this in the markdown.js
 
     // Question for Installation
     {
@@ -143,7 +141,7 @@ function writeToFile(fileName, data) {
 // function to initalize the beginning of the questions 
 function init() {
     inquirer.prompt(questions).then((data) => {
-        console.log(JOSN.stringify(data, null, " "));
+        console.log(JSON.stringify(data, null, " "));
         data.getLicense = getLicense(data.license);
         writeToFile("./example/readme.md", data);
     });

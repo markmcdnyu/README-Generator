@@ -1,11 +1,9 @@
-//function to generate the markdown here
-function generateMarkdown(data) {
-    return `
+
     # Project Title
-    ${data.title}
+    The Grand Project 
 
     # Description
-    ${data.description}
+    Gather all the best code snippets
 
     # Table of Contents 
     * [Installation](#-Installation)
@@ -16,28 +14,24 @@ function generateMarkdown(data) {
     * [Questions](#-Contact-Information)
     
     # Installation
-    ${data.installation}
+    If using NPM and node, please install NPM
 
     # Usage
-    ${data.usage}
+    Usage should be to crowd source all the best from the best 
 
     # License 
-    ${data.license}
+    Boost Software 1.0
 
     * As this license list was not comprehensive, if you need another license, use the contact information below to ask for license to be added. 
     
     # Contributing 
-    ${data.contributing}
+    Contribute to this project by forking and then code all your best code
 
     # Tests
-    ${data.tests}
+    If you Unit test, try using Jest 
 
     # Contact Information 
-    * GitHub Username: ${data.userName}
-    * Contact Email: ${data.userEmail}
+    * GitHub Username: markmcdnyu
+    * Contact Email: markwilliammcdonald@gmail.com
     
-    `;
-}
-
-//need to export the generateMarkdown function 
-module.exports = generateMarkdown;
+    
