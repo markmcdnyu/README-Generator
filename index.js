@@ -28,7 +28,7 @@ function getLicense(value) {
 }
 
 
-function valiateInput(value) {
+function validateInput(value) {
     if (value != "") {
         return true;
     } else {
@@ -43,14 +43,14 @@ const questions = [
         type: "input",
         name: "title",
         message: "What is the title of your project?",
-        validate: valiateInput,
+        validate: validateInput,
     },
     // Question for the project Description
     {
         type: "input",
         name: "description",
         message: "Please enter a description of your project.",
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // Table of Contents, andling this in the markdown.js
@@ -60,7 +60,7 @@ const questions = [
         type: "input",
         name: "installation",
         message: "Please enter an explanation how to install the software, or commands for the program.",
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // Question for Usage
@@ -68,7 +68,7 @@ const questions = [
         type: "input",
         name: "usage",
         message: "Please describe how we can use this program/project.",
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // Question for License 
@@ -85,7 +85,7 @@ const questions = [
             "MIT",
             "Mozilla",
         ],
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // Question for Contributing 
@@ -93,7 +93,7 @@ const questions = [
         type: "input",
         name: "contributing",
         message: "How can users contribute to your project.",
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // Question for Tests
@@ -101,7 +101,7 @@ const questions = [
         type: "input",
         name: "tests",
         message: "Please enter any testing instructions you would like to provide for this project.",
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // QUESTIONS section -- github 
@@ -109,7 +109,7 @@ const questions = [
         type: "input",
         name: "userName",
         message: "What is your GitHub username?",
-        validate: valiateInput,
+        validate: validateInput,
     },
 
     // QUESTIONS section -- email address
